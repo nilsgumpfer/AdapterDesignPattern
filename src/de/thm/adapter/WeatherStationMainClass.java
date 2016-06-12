@@ -6,8 +6,8 @@ import java.util.ArrayList;
  * Created by Nils on 06.05.2016.
  */
 public class WeatherStationMainClass {
-    private ArrayList<MetricWeatherStation>         lMetricWeatherStations;
-    private ArrayList<AngloAmericanWeatherStation>  lAngloAmericanWeatherStations;
+    //private ArrayList<MetricWeatherStation>         lMetricWeatherStations;
+    //private ArrayList<AngloAmericanWeatherStation>  lAngloAmericanWeatherStations;
     private ArrayList<WeatherStation>               lAllWeatherStations;
 
     public static void main(String[] args) {
@@ -19,8 +19,8 @@ public class WeatherStationMainClass {
     }
 
     public WeatherStationMainClass(){
-        lMetricWeatherStations          = new ArrayList<MetricWeatherStation>();
-        lAngloAmericanWeatherStations   = new ArrayList<AngloAmericanWeatherStation>();
+        //lMetricWeatherStations          = new ArrayList<MetricWeatherStation>();
+        //lAngloAmericanWeatherStations   = new ArrayList<AngloAmericanWeatherStation>();
         lAllWeatherStations             = new ArrayList<WeatherStation>();
     }
 
@@ -32,10 +32,10 @@ public class WeatherStationMainClass {
         AngloAmericanWeatherStation aawsLos_Angeles = new AngloAmericanWeatherStation(96.6,0.231,0.3,19.3,30,"Los Angeles");
         WeatherStationAdapter wsaLos_Angeles        = new WeatherStationAdapter(aawsLos_Angeles);
 
-        lMetricWeatherStations.add(mwsBerlin);
+        /*lMetricWeatherStations.add(mwsBerlin);
         lMetricWeatherStations.add(mwsHamburg);
         lAngloAmericanWeatherStations.add(aawsNew_York);
-        lAngloAmericanWeatherStations.add(aawsLos_Angeles);
+        lAngloAmericanWeatherStations.add(aawsLos_Angeles);*/
 
         lAllWeatherStations.add(mwsBerlin);
         lAllWeatherStations.add(mwsHamburg);
@@ -43,7 +43,7 @@ public class WeatherStationMainClass {
         lAllWeatherStations.add(wsaLos_Angeles);
     }
 
-    public void runSampleOld(){
+   /*public void runSampleOld(){
 
         generateTestData();
 
@@ -55,7 +55,7 @@ public class WeatherStationMainClass {
             aawsTemp.startMeasure();
             System.out.println(aawsTemp.toString());
         }
-    }
+    }*/
 
     public void runSampleNew(){
 
@@ -66,7 +66,7 @@ public class WeatherStationMainClass {
         }
     }
 
-    public ArrayList<MetricWeatherStation> getlMetricWeatherStations() {
+    /*public ArrayList<MetricWeatherStation> getlMetricWeatherStations() {
         return lMetricWeatherStations;
     }
 
@@ -80,7 +80,7 @@ public class WeatherStationMainClass {
 
     public void setlAngloAmericanWeatherStations(ArrayList<AngloAmericanWeatherStation> lAngloAmericanWeatherStations) {
         this.lAngloAmericanWeatherStations = lAngloAmericanWeatherStations;
-    }
+    }*/
 
     public ArrayList<WeatherStation> getlAllWeatherStations() {
         return lAllWeatherStations;
